@@ -1,11 +1,45 @@
-body {
-    margin: 0;
+body,
+html {
     padding: 0;
-    font-family: sans-serif;
-    background-image: url(maria-teneva-mo62s5dp0zg-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    border: 1px solid red;
+    margin: 0;
+
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+
+table,
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+
+.title {
+    text-align: center;
+    margin: 1rem;
+
+}
+
+
+.content {
+    /* margin: 0 auto; */
+    /* width: 400px; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* background-color:  */
+}
+
+#subTitle {
+    text-align: center;
 }

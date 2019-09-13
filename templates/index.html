@@ -3,7 +3,7 @@
 <!-- Copying the blocks in the index.html file  -->
 {% block head %}
 <!-- Creating head content -->
-<h1>This is the head block, welcome</h1>
+<h1 class="title">WELCOME</h1>
 {% endblock %}
 
 
@@ -11,6 +11,32 @@
 <!-- Creating body content -->
 {% block body %}
 
+<div class="content">
+    <!-- Creating a table -->
+    <h1 id='subTitle'>TASX</h1>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Actions</th>
+        </tr>
 
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="">Delete</a>
+                <br>
+                <a href="">Update</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- adding a form -->
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add task">
+    </form>
+</div>
 
 {% endblock %}

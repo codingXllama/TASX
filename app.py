@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 # setting up the app
 app = Flask(__name__)
+# app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db '
 # initializing the db for our app settings
 db = SQLAlchemy(app)
@@ -23,10 +24,11 @@ class Todo(db.Model):
     def __repr__(self):
         return'<Task %r> ' % self.id
 # routing the app
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 # defining the route method
 def index():
     # rendering the html file
+
     return render_template('index.html')
 
 
